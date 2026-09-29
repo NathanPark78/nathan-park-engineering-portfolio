@@ -55,7 +55,7 @@ h3 { font-size: 1.25rem; }
 
 .section-heading { max-width: 820px; margin-bottom: 38px; }
 .section-heading.split { max-width: none; display: flex; justify-content: space-between; align-items: end; gap: 30px; }
-.capability-grid { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.capability-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
 .capability-card { min-height: 240px; padding: 28px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: rgba(255,255,255,.62); }
 .capability-card > span, .loop-step > span, .decision-grid article > span, .process-grid article > span { color: var(--teal); font-family: Consolas, monospace; font-size: .72rem; }
 .capability-card h3 { margin-top: 58px; }
@@ -209,4 +209,3 @@ h3 { font-size: 1.25rem; }
   .closing-cta { padding: 36px 24px; }
   .footer-meta { flex-direction: column; gap: 8px; }
 }
-
