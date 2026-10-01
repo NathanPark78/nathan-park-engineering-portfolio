@@ -12,7 +12,7 @@ export const site = {
     email: "nathan_park@berkeley.edu",
     linkedin: "https://www.linkedin.com/in/parknathan1/",
     github: "https://github.com/NathanPark78",
-    resume: ""
+    resume: "assets/resume/nathan-park-resume-fall-2026.pdf"
   },
   capabilities: [
     {

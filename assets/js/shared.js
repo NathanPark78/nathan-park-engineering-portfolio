@@ -89,7 +89,7 @@ export function mountChrome(active = "") {
           ${linkMarkup("GitHub", site.links.github)}
         </div>
       </div>
-      <div class="shell footer-meta"><span>Static portfolio for GitHub Pages</span><span>© ${new Date().getFullYear()} ${site.name}</span></div>`;
+      <div class="shell footer-meta"><span>© ${new Date().getFullYear()} ${site.name}</span></div>`;
   }
 }
 
