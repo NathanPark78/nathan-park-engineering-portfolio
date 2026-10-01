@@ -6,8 +6,8 @@ export const site = {
   education: "Mechanical Engineering + Translational Medicine",
   thesis: "I build wearable and medical devices around the realities of bodies, signals, and needs.",
   introduction:
-    "A structure-first portfolio for my selected work in wearable sensing, medical devices, prototyping, verification, validation, and regulated technical execution.",
-  availability: "Seeking co-op and full-time (June 2027) engineering opportunities.",
+    "Selected work in wearable sensing, medical devices, and product development, from early requirements and prototypes through verification and validation.",
+  availability: "Seeking Spring 2027 co-op opportunities; available for full-time engineering roles beginning June 2027.",
   links: {
     email: "nathan_park@berkeley.edu",
     linkedin: "https://www.linkedin.com/in/parknathan1/",
