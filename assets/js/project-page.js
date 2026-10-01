@@ -64,6 +64,17 @@ function sourceList(items = []) {
   }).join("")}</ol>`;
 }
 
+function milestoneTimeline(items = []) {
+  if (!items.length) return "";
+  return `<ol class="milestone-timeline">${items.map((item) => {
+    const externalHref = /^https?:\/\//.test(item.href || "") ? item.href : "";
+    const link = externalHref
+      ? ` <a href="${escapeHtml(externalHref)}" target="_blank" rel="noreferrer">${escapeHtml(item.linkLabel || "Learn more")} <span aria-hidden="true">↗</span></a>`
+      : "";
+    return `<li><span>${escapeHtml(item.when)}</span><div><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.body)}${link}</p></div></li>`;
+  }).join("")}</ol>`;
+}
+
 function mediaGrid(activeProject) {
   if (!activeProject.media?.length) {
     return `<div class="evidence-empty"><strong>Approved evidence pending</strong><p>Add public-safe photos, CAD, plots, or short videos through the project record after review.</p></div>`;
@@ -95,6 +106,7 @@ if (!project || !root) {
 
   addSection("Context and problem", `${project.lead ? `<p class="case-lead">${escapeHtml(project.lead)}</p>` : ""}${paragraphs(project.problem)}`, "context");
   addSection("Role and ownership", `${roleGrid(project)}${list(project.ownership)}`, "ownership");
+  if (project.timeline?.length) addSection("Program timeline", milestoneTimeline(project.timeline), "program-timeline");
 
   if (project.requirements?.length) {
     addSection("Engineering requirements", list(project.requirements, "requirement-list"), "requirements");
@@ -125,7 +137,7 @@ if (!project || !root) {
           ${disclosure}
         </div>
         <div>
-          <div class="hero-media">${renderProjectMedia(project, project.media?.[0], { eager: true })}</div>
+          <div class="hero-media${project.slug === "astro-flexion" ? " astro-logo-frame" : ""}">${renderProjectMedia(project, project.media?.[0], { eager: true })}</div>
           <dl class="project-facts">
             <div><dt>Period</dt><dd>${escapeHtml(project.year)}</dd></div>
             <div><dt>Status</dt><dd>${escapeHtml(project.status)}</dd></div>

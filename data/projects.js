@@ -20,7 +20,8 @@ export const projects = [
     requirements: [],
     ownership: [
       "Contributed to research, device design and assembly, coding and analysis, design-build-test work, and final reporting.",
-      "Supported sensor integration and garment assembly, and built the Python logging and live-analysis workflow."
+      "Supported sensor integration and garment assembly, and built the Python logging and live-analysis workflow.",
+      "Created a novel, low-cost stretchable wire interconnect designed to reduce motion artifacts while routing sensor connections through a moving textile."
     ],
     process: [
       ["Explore", "Use early sleeve and wrist concepts to learn how placement and fit affect the wearable system."],
@@ -30,26 +31,31 @@ export const projects = [
     ],
     build: [
       "A compression garment integrated seven sensors for movement, ambient light, skin temperature, and PPG heart rate.",
+      "A novel low-cost stretchable wire prototype supported compliant sensor routing and was designed to reduce movement-related artifacts without relying on costly specialty interconnects.",
       "Flexible routing, dedicated mounts, embedded acquisition, and Python analysis supported wearable trials and live data review."
     ],
     verification: [
       "Stationary and activity trials compared heart-rate output with an ActiGraph reference and an Apple Watch. In one treadmill trial, high-confidence PPG samples had a reported Pearson correlation of 0.963 with ActiGraph; no separate Apple Watch agreement statistic is reported.",
-      "The Activation-Recovery Score is an exploratory, subject-specific measure. These early trials do not establish clinical performance or circadian-phase accuracy."
+      "Created and tested an exploratory, subject-specific Activation-Recovery Score (ARS) using trial data to examine activity and recovery patterns. The ARS remains an early analysis concept; these trials do not establish clinical performance or circadian-phase accuracy."
     ],
     metrics: [
       { value: "7", label: "Integrated sensors", note: "Movement, light, temperature, and heart-rate sensing in one garment." },
       { value: "5", label: "Design-build-test cycles", note: "From early placement concepts to an integrated prototype." }
     ],
     decisions: [],
-    nextSteps: [],
+    nextSteps: [
+      "The capstone is planned to run again during the 2026–2027 academic year, extending prototype and analysis work.",
+      "A longer-term goal is to pursue NASA grant funding to improve physiological sensing in novel spaceflight environments and support better-informed astronaut-health and clinical decisions."
+    ],
     proofPoints: [],
-    outcome: "Five design-build-test cycles produced an integrated seven-sensor garment and an early analysis workflow, with initial reference-device comparison to guide future validation.",
-    limitations: "Results are preliminary. Repeatability, multi-participant performance, Apple Watch agreement, and the activation-recovery model remain unvalidated.",
+    outcome: "Five design-build-test cycles produced an integrated seven-sensor garment, a novel low-cost stretchable interconnect, and an early analysis workflow. The team created and tested the exploratory ARS, while initial reference-device comparisons helped define the next validation questions.",
+    limitations: "Results are preliminary. The interconnect's artifact-reduction benefit has not been quantified; repeatability, multi-participant performance, Apple Watch agreement, and the exploratory ARS remain unvalidated.",
     links: [],
     media: [
       { src: "assets/media/niddk-wearable/poster-presentation.jpg", alt: "MyoWeave team presenting the project poster", caption: "MyoWeave poster presentation day." },
       { src: "assets/media/niddk-wearable/garment-prototype.jpeg", alt: "MyoWeave compression garment with distributed sensors and routed wiring", caption: "Integrated compression-garment prototype with distributed sensing." },
-      { src: "assets/media/niddk-wearable/trial-wearer.png", alt: "Participant wearing the MyoWeave prototype during a trial", caption: "Wearer trial used to review placement, mobility, and body-interface behavior." }
+      { src: "assets/media/niddk-wearable/trial-wearer.png", alt: "Participant wearing the MyoWeave prototype during a trial", caption: "Wearer trial used to review placement, mobility, and body-interface behavior." },
+      { src: "assets/media/niddk-wearable/stretchable-wire-prototype.jpg", alt: "MyoWeave stretchable wire prototype beside a ruler for scale", caption: "Novel low-cost stretchable wire prototype designed to support compliant textile routing and reduce motion artifacts." }
     ],
     links: [
       { label: "Watch the full trial run", href: "https://drive.google.com/file/d/1RqsKu3y-0-iBXbhmKVSwm5bMYaM9kYpD/view?usp=sharing", primary: true }
@@ -88,6 +94,14 @@ export const projects = [
       ["Prototype", "Build an early sensing and data-capture workflow to learn what the system could record."],
       ["Decide", "Review experiment quality and use remaining questions to shape future validation." ]
     ],
+    timeline: [
+      { when: "2024", title: "Space Edge Accelerator Program", body: "Participated in the accelerator sponsored by the Space Foundation and Blue Origin." },
+      { when: "Milestone 02", title: "Phase Capital Frontiers Pitch Event", body: "Presented Astro Flexion at the Phase Capital Frontiers pitch event." },
+      { when: "Milestone 03", title: "Vanderbilt / NSF I-Corps Mid-South Hub Innovation Open Mic", body: "Presented the venture through the Mid-South Hub Innovation Open Mic.", href: "https://www.midsouthhub.org/", linkLabel: "Mid-South Hub" },
+      { when: "Milestone 04", title: "NSF I-Corps Sullivan Family Incubator Program", body: "Won $5,000 in non-dilutive funding through pitching in the incubator program." },
+      { when: "Milestone 05", title: "I-Corps Builder Program", body: "Continued venture development through the I-Corps Builder Program." },
+      { when: "Current focus", title: "Technical and signal-acquisition depth", body: "Paused venture advancement to deepen the technical and signal-acquisition work needed for the next development phase." }
+    ],
     build: [
       "Created an early multi-channel acquisition workflow with organized run records and basic signal review.",
       "Used exploratory processing to inspect captured data and identify where better test controls and repeatability were needed."
@@ -101,8 +115,10 @@ export const projects = [
     outcome: "Astro Flexion combined user discovery with early wearable-sensing experiments and a data-review workflow, identifying the questions a future prototype would need to answer.",
     limitations: "Early development evidence only; wearable signal performance and repeatability have not been established.",
     media: [
-      { src: "assets/media/astro-flexion/astro-flexion-logo.webp", fit: "contain", alt: "Astro Flexion project mark", caption: "Astro Flexion identity used during the founder-led exploration of accessible muscle-sensing workflows." },
-      { src: "assets/media/astro-flexion/evidence-pipeline.png", fit: "contain", alt: "Astro Flexion development process from user question through next experiment", caption: "High-level development loop connecting user needs, prototype learning, and the next validation question." }
+      { src: "assets/media/astro-flexion/astro-flexion-logo-close.jpg", fit: "contain", alt: "Astro Flexion project emblem on a dark gray field", caption: "Astro Flexion identity used during the founder-led exploration of accessible muscle-sensing workflows." },
+      { src: "assets/media/astro-flexion/evidence-pipeline.png", fit: "contain", alt: "Astro Flexion development process from user question through next experiment", caption: "High-level development loop connecting user needs, prototype learning, and the next validation question." },
+      { src: "assets/media/astro-flexion/phase-capital-frontiers-speaking.jpg", alt: "Nathan Park presenting at the Phase Capital Frontiers event", caption: "Phase Capital Frontiers pitch event — presentation photo." },
+      { src: "assets/media/astro-flexion/phase-capital-frontiers-stage.jpg", alt: "Nathan Park presenting Astro Flexion on stage at Phase Capital Frontiers", caption: "Phase Capital Frontiers — stage view during the pitch presentation." }
     ],
     sources: [
       ["Mechanomyography literature review: sensor characteristics and applications", "https://pubmed.ncbi.nlm.nih.gov/24856875/"]
@@ -192,7 +208,7 @@ export const projects = [
     outcome: "A high-level research teaser that preserves the significance and timeline of the work without preempting publication.",
     limitations: "Architecture, figures, protocols, and performance results intentionally withheld pending submission and release review. Submission is planned, not represented as completed or accepted.",
     sources: [["IEEE EMBC 2027 paper information", "https://embc.embs.org/2027/papers/"]],
-    media: [{ src: "assets/media/phoenix-research/teaser.png", alt: "Abstract, non-enabling illustration for a publication-pending thermal research project", caption: "High-level project visual; technical design and results are intentionally omitted." }],
+    media: [{ src: "assets/media/phoenix-research/vise-logo.jpg", fit: "contain", alt: "Vanderbilt Institute for Surgery and Engineering (VISE) logo", caption: "Vanderbilt Institute for Surgery and Engineering (VISE), the institute encompassing the IoMT Lab." }],
     related: ["lilly-validation", "niddk-wearable"]
   },
   {
@@ -206,25 +222,26 @@ export const projects = [
     domain: "Wearable enclosure design and rapid prototyping",
     role: "Mechanical design and prototyping contributor",
     summary: "An ICU pulse-oximeter enclosure evolved from printed material experiments to a selected two-part PLA/TPU concept.",
-    lead: "The ICU patch project translated a wearable monitoring concept into a package shaped by intended clinical workflow and feedback from VUMC clinicians in the VISE space. I treated comfort, retention, usability, and design for manufacture as connected engineering questions, using successive CAD and printed iterations to compare what each material and interface could contribute.",
+    lead: "The ICU patch project translated a wearable monitoring concept into a package shaped by intended clinical workflow and feedback from VUMC clinicians in the VISE space. I treated comfort, retention, usability, and design for manufacture as connected engineering questions. Every design iteration was 3D-printed and physically tested for fit, assembly, retention, and material/interface tradeoffs; these were prototype checks, not formal usability or clinical validation.",
     tags: ["Human factors", "DFMA", "SolidWorks", "PLA / TPU", "Rapid prototyping"],
     tools: ["SolidWorks", "PLA and TPU 3D printing", "Design iteration", "Human-factors reasoning"],
     problem: ["A rigid enclosure can protect and locate components but may be uncomfortable at the body interface; a fully compliant concept introduces different fit, retention, and fabrication tradeoffs."],
-    ownership: ["Translated concept sketches into CAD and enclosure iterations.", "Compared PLA, TPU, and hybrid constructions through prototype exploration.", "Used feedback from VUMC clinicians in the VISE space to inform workflow considerations, alongside patient comfort, usability, cause analysis, and fabrication constraints."],
+    ownership: ["Translated concept sketches into CAD and enclosure iterations, printing and testing each iteration.", "Compared PLA, TPU, and hybrid constructions through physical prototype checks.", "Used feedback from VUMC clinicians in the VISE space to inform workflow considerations, alongside patient comfort, usability, cause analysis, and fabrication constraints."],
     process: [
       ["Frame needs", "Translate device packaging and user/workflow considerations into mechanical design questions."],
       ["Explore", "Move from PLA concepts to TPU experiments, then assess a two-part hybrid approach."],
-      ["Prototype", "Use printed versions to review geometry, assembly, retention, and interface tradeoffs."],
+      ["Print and test", "3D-print and physically test every iteration to review geometry, assembly, retention, and interface tradeoffs."],
       ["Select", "Carry the rigid-plus-compliant concept forward as the selected design direction."]
     ],
     build: ["The selected concept combines a rigid PLA enclosure with a compliant TPU body-contact/retention element. Earlier explorations included all-PLA and all-TPU directions and variations in the two materials and their interfaces."],
-    verification: ["Iterative CAD and prototype exploration incorporated clinician feedback as design input; this was not a formal usability study. Cleaning, optical signal quality, and clinical performance were not evaluated."],
+    verification: ["Every design iteration was 3D-printed and tested as a prototype, with checks focused on fit, assembly, retention, and interface behavior. Clinician feedback informed design decisions but this was not a formal usability study. Cleaning, optical signal quality, and clinical performance were not evaluated."],
     decisions: [["Use a hybrid", "Separate structural enclosure needs from the compliant body interface rather than forcing one material to serve both."], ["Design around workflow", "Consider how the device is placed, secured, accessed, and removed in a clinical setting."], ["Keep claims mechanical", "The enclosure work does not establish pulse-oximeter accuracy or clinical performance."]],
     outcome: "A selected two-part hybrid concept emerged from PLA-to-TPU-to-hybrid iteration, with human factors and manufacturability guiding the design direction.",
     limitations: "Selected mechanical concept only; comfort, cleaning, sensing, and clinical performance have not been validated.",
     sources: [["FDA, Applying Human Factors and Usability Engineering to Medical Devices", "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/applying-human-factors-and-usability-engineering-medical-devices"]],
     media: [
       { src: "assets/media/pulseox-enclosure/selected-hybrid-cad.png", alt: "CAD rendering of the selected hybrid pulse-oximeter enclosure concept", caption: "Selected hybrid concept rendering: a rigid enclosure with a compliant interface element." },
+      { src: "assets/media/pulseox-enclosure/iteration-history.png", alt: "Seven CAD iterations of the ICU pulse-oximeter enclosure, progressing toward the selected hybrid concept", caption: "Iteration history: successive enclosure designs explored geometry and material/interface choices before selection of the hybrid direction." },
       { src: "assets/media/pulseox-enclosure/concept-sketch.jpg", alt: "Concept sketch for the wearable pulse-oximeter casing", caption: "Early sketch translated into successive CAD and printed iterations." },
       { src: "assets/media/pulseox-enclosure/printed-iterations.jpg", alt: "Printed enclosure prototypes from successive design iterations", caption: "Prototype iterations used to consider geometry, fit, retention, and material tradeoffs." }
     ],
@@ -316,7 +333,7 @@ export const projects = [
     limitations: "Demonstration prototype only; it is not a validated prosthetic or assistive device.",
     sources: [],
     media: [
-      { src: "assets/media/mecha-gauntlet/prototype.jpeg", alt: "Five-finger cable-driven hand demonstration prototype", caption: "Physical prototype showing the hand, cable actuation, servos, and user controls." },
+      { src: "assets/media/mecha-gauntlet/prototype.jpeg", fit: "contain", alt: "Full five-finger cable-driven hand demonstration prototype", caption: "Full prototype view showing the hand, cable actuation, servos, and user controls." },
       { src: "assets/media/mecha-gauntlet/finger-cad.png", alt: "CAD model of the hand and finger mechanism", caption: "Finger and phalanx geometry developed for the cable-driven mechanism." },
       { src: "assets/media/mecha-gauntlet/motion-prototype.jpeg", alt: "Mechatronics hand prototype during integration", caption: "Integration evidence from the course prototype build." }
     ],

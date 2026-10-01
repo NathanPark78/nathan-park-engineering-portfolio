@@ -138,6 +138,8 @@ h3 { font-size: 1.25rem; }
 .hero-media > * { height: 100%; }
 .hero-media img, .hero-media video { object-fit: cover; }
 .media-contain { padding: 28px; object-fit: contain !important; background: var(--surface); }
+.astro-logo-frame { width: min(100%, 340px); height: 340px; margin-inline: auto; border-color: transparent; background: #505762; }
+.astro-logo-frame .media-contain { width: 100%; height: 100%; padding: 0; object-fit: contain !important; background: #505762; }
 .project-facts { margin: 16px 0 0; border-top: 1px solid var(--line); }
 .project-facts div { padding: 11px 0; display: grid; grid-template-columns: 90px 1fr; gap: 16px; border-bottom: 1px solid var(--line); }
 .project-facts dt { color: var(--teal); font-family: Consolas, monospace; font-size: .68rem; text-transform: uppercase; }
@@ -171,6 +173,12 @@ h3 { font-size: 1.25rem; }
 .process-grid article, .decision-grid article { padding: 22px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
 .process-grid h3, .decision-grid h3 { margin: 28px 0 9px; }
 .process-grid p, .decision-grid p { margin-bottom: 0; color: var(--muted); font-size: .86rem; }
+.milestone-timeline { padding: 0; margin: 0; list-style: none; }
+.milestone-timeline li { padding: 20px 0; display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 24px; border-top: 1px solid var(--line); }
+.milestone-timeline li > span { color: var(--teal); font-family: Consolas, monospace; font-size: .7rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+.milestone-timeline h3 { margin: 0 0 8px; font-size: 1rem; }
+.milestone-timeline p { margin: 0; color: var(--muted); font-size: .88rem; }
+.milestone-timeline a { display: inline-block; margin-left: 6px; color: var(--teal); font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .metric-grid { margin-top: 28px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
 .metric-grid article { min-height: 190px; padding: 24px; display: flex; flex-direction: column; border-radius: 14px; background: var(--dark); color: white; }
 .metric-grid strong { font-size: 2.55rem; line-height: 1; letter-spacing: -.05em; }
@@ -245,6 +253,7 @@ h3 { font-size: 1.25rem; }
   .capability-grid { grid-template-columns: 1fr; }
   .capability-card { min-height: 200px; }
   .timeline > article { grid-template-columns: 1fr; gap: 8px; }
+  .milestone-timeline li { grid-template-columns: 1fr; gap: 8px; }
   .case-sidebar { grid-template-columns: 1fr; }
   .closing-cta { padding: 36px 24px; }
   .footer-meta { flex-direction: column; gap: 8px; }
