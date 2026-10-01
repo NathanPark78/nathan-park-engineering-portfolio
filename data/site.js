@@ -46,5 +46,25 @@ export const site = {
     ["Build", "Integrate hardware, firmware, fixtures, and documentation."],
     ["Verify", "Test, analyze, challenge risk, and preserve evidence."],
     ["Decide", "Use results to drive the next design or readiness decision."]
+  ],
+  workModes: [
+    {
+      number: "01",
+      principle: "Operational discipline",
+      title: "Industry and manufacturing",
+      body: "Apply Kaizen, 5S, DFMA, and project-management discipline to improve manufacturability, clarify ownership, and roll out software and process changes that teams can sustain."
+    },
+    {
+      number: "02",
+      principle: "Evidence discipline",
+      title: "Translational research",
+      body: "Translate clinician and researcher input into requirements, early prototypes, tests, and traceable decisions, supported by design-control-informed documentation and manuscript development."
+    },
+    {
+      number: "03",
+      principle: "Learning velocity",
+      title: "Early-stage ventures",
+      body: "Combine market and user discovery with lean experiments to test high-risk assumptions early, fail safely at the prototype stage, and direct limited resources toward the strongest evidence."
+    }
   ]
 };

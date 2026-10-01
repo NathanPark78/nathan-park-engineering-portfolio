@@ -29,12 +29,13 @@ export function renderProjectMedia(project, item, options = {}) {
   if (!item?.src) return renderMediaPlaceholder(project);
 
   const src = pathFromRoot(item.src);
+  const mediaClass = item.fit === "contain" ? ' class="media-contain"' : "";
   if (item.type === "video") {
     const poster = item.poster ? ` poster="${pathFromRoot(item.poster)}"` : "";
-    return `<video controls muted playsinline preload="metadata"${poster}><source src="${src}"></video>`;
+    return `<video${mediaClass} controls muted playsinline preload="metadata"${poster}><source src="${src}"></video>`;
   }
 
-  return `<img src="${src}" alt="${escapeHtml(item.alt || item.caption || project.title)}" loading="${eager ? "eager" : "lazy"}">`;
+  return `<img${mediaClass} src="${src}" alt="${escapeHtml(item.alt || item.caption || project.title)}" loading="${eager ? "eager" : "lazy"}">`;
 }
 
 function linkMarkup(label, href) {
@@ -106,4 +107,3 @@ export function projectCard(project) {
       </div>
     </a>`;
 }
-

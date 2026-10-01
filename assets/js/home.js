@@ -31,3 +31,12 @@ if (loop) {
     <article class="loop-step"><span>${String(index + 1).padStart(2, "0")}</span><h3>${escapeHtml(title)}</h3><p>${escapeHtml(body)}</p></article>`).join("");
 }
 
+const workModes = document.querySelector("[data-work-modes]");
+if (workModes) {
+  workModes.innerHTML = site.workModes.map((item) => `
+    <article class="work-mode-card">
+      <div class="work-mode-kicker"><span>${escapeHtml(item.number)}</span><em>${escapeHtml(item.principle)}</em></div>
+      <h3>${escapeHtml(item.title)}</h3>
+      <p>${escapeHtml(item.body)}</p>
+    </article>`).join("");
+}

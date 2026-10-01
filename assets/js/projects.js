@@ -8,10 +8,10 @@ const researchRoot = document.querySelector("[data-project-list='research']");
 const supportingRoot = document.querySelector("[data-project-list='supporting']");
 
 if (featuredRoot) featuredRoot.innerHTML = projects.filter((project) => project.featured).map(projectCard).join("");
-if (researchRoot) researchRoot.innerHTML = projects.filter((project) => project.visibility === "teaser").map(projectCard).join("");
+if (researchRoot) researchRoot.innerHTML = projects.filter((project) => project.visibility === "teaser" || project.category === "research").map(projectCard).join("");
 if (supportingRoot) {
   supportingRoot.innerHTML = projects
-    .filter((project) => !project.featured && project.visibility !== "teaser")
+    .filter((project) => !project.featured && project.visibility !== "teaser" && project.category !== "research")
     .map((project) => `
       <a class="archive-row" href="projects/${project.slug}.html">
         <span>${escapeHtml(project.eyebrow)}</span>
@@ -20,4 +20,3 @@ if (supportingRoot) {
         <b>→</b>
       </a>`).join("");
 }
-
