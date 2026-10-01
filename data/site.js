@@ -1,6 +1,7 @@
 export const site = {
   name: "Nathan Park",
   initials: "NP",
+  profileImage: "assets/media/profile/nathan-park.jpg",
   role: "Mechanical Engineer | Wearables, Medical Devices + Product Development",
   education: "Mechanical Engineering + Translational Medicine",
   thesis: "I build wearable and medical devices around the realities of bodies, signals, and needs.",

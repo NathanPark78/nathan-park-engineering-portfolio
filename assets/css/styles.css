@@ -32,7 +32,7 @@ h3 { font-size: 1.25rem; }
 .site-header { position: relative; z-index: 20; border-bottom: 1px solid var(--line); background: rgba(244,243,239,.96); }
 .nav-shell { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-.brand-mark { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 50%; background: var(--dark); color: white; font-family: Consolas, monospace; font-size: .75rem; }
+.brand-mark { width: 42px; height: 42px; display: block; flex: 0 0 42px; border-radius: 50%; object-fit: cover; }
 .brand > span:last-child { display: grid; }
 .brand strong { font-size: .9rem; }
 .brand small { color: var(--muted); font-size: .7rem; }

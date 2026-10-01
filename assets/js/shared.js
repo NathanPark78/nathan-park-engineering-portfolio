@@ -59,7 +59,7 @@ export function mountChrome(active = "") {
     header.innerHTML = `
       <div class="shell nav-shell">
         <a class="brand" href="${pathFromRoot("index.html")}">
-          <span class="brand-mark">${site.initials}</span>
+          <img class="brand-mark" src="${pathFromRoot(site.profileImage)}" alt="">
           <span><strong>${site.name}</strong><small>${site.role}</small></span>
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>

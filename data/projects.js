@@ -47,8 +47,12 @@ export const projects = [
     limitations: "Results are preliminary. Repeatability, multi-participant performance, Apple Watch agreement, and the activation-recovery model remain unvalidated.",
     links: [],
     media: [
+      { src: "assets/media/niddk-wearable/poster-presentation.jpg", alt: "MyoWeave team presenting the project poster", caption: "MyoWeave poster presentation day." },
       { src: "assets/media/niddk-wearable/garment-prototype.jpeg", alt: "MyoWeave compression garment with distributed sensors and routed wiring", caption: "Integrated compression-garment prototype with distributed sensing." },
       { src: "assets/media/niddk-wearable/trial-wearer.png", alt: "Participant wearing the MyoWeave prototype during a trial", caption: "Wearer trial used to review placement, mobility, and body-interface behavior." }
+    ],
+    links: [
+      { label: "Watch the full trial run", href: "https://drive.google.com/file/d/1RqsKu3y-0-iBXbhmKVSwm5bMYaM9kYpD/view?usp=sharing", primary: true }
     ],
     sources: [
       ["Dr. Kong Y. Chen — NIDDK staff biography", "https://www.niddk.nih.gov/about-niddk/staff-directory/biography/chen-kong"]
@@ -145,6 +149,7 @@ export const projects = [
     limitations: "This case study describes workflow and tool contributions; it does not claim quantified business or validation outcomes.",
     sources: [["FDA, Process Validation: General Principles and Practices", "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/process-validation-general-principles-and-practices"]],
     media: [
+      { src: "assets/media/lilly-validation/eli-lilly-site.jpg", alt: "Eli Lilly Concord facility building", caption: "Eli Lilly Concord site. Photo credit: Charlotte Business Journal." },
       { src: "assets/media/lilly-validation/workflow.png", alt: "Workflow showing observe, model, prototype, and review stages", caption: "Workflow-first problem solving: understand the work, model the need, prototype, and review." }
     ],
     related: ["niddk-wearable", "phoenix-research"]
