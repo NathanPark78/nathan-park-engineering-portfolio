@@ -26,6 +26,7 @@ h3 { font-size: 1.25rem; }
 .shell { width: min(var(--shell), calc(100% - 44px)); margin-inline: auto; }
 .section { padding-block: 94px; }
 .section-tinted { background: #e9eeeb; border-block: 1px solid var(--line); }
+.section-featured-work { background: #e9eeeb; border-block: 1px solid var(--line); }
 .eyebrow { margin-bottom: 12px; color: var(--teal); font-family: Consolas, "Courier New", monospace; font-size: .75rem; font-weight: 700; letter-spacing: .11em; text-transform: uppercase; }
 .lede { max-width: 790px; color: var(--muted); font-size: clamp(1.08rem, 2vw, 1.32rem); }
 
